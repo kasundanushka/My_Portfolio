@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills & Expertise - D/BSE/25/0007</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .apt-logo {
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .apt-logo span {
+            color: white;
+        }
+
+        .back-btn {
+            padding: 10px 20px;
+            background-color: #00ff88;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #00cc6a;
+        }
+
+        /* Page Title */
+        .page-header {
+            background-color: #000;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .page-header p {
+            font-size: 18px;
+            color: #aaa;
+        }
+
+        /* Skills Container */
+        .skills-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Skill Card */
+        .skill-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-card:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
+        }
+
+        /* Skill Icon */
+        .skill-icon {
+            flex: 0 0 80px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .skill-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Skill Content */
+        .skill-content {
+            flex: 1;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skill-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .skill-title h2 {
+            font-size: 24px;
+            color: #000;
+        }
+
+        .star-icon {
+            color: #FFD700;
+            font-size: 20px;
+        }
+
+        .proficiency-badge {
+            text-align: right;
+        }
+
+        .proficiency-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .proficiency-level {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            margin-top: 5px;
+        }
+
+        .skill-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .skill-category {
+            font-size: 13px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Category Sections */
+        .category-section {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 32px;
+            color: #000;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #00ff88;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skill-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .skill-icon {
+                margin: 0 auto;
+            }
+
+            .skill-header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .proficiency-badge {
+                text-align: center;
+            }
+
+            .page-header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="apt-logo">KAS<span>U</span>N</div>
+        <a href="index.html" class="back-btn">← Back to Portfolio</a>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Skills & Expertise</h1>
+        <p>Comprehensive overview of technical and professional capabilities</p>
+    </div>
+
+    <!-- Skills Container -->
+    <div class="skills-container">
+
+        <!-- Programming Languages Section -->
+        <div class="category-section">
+            <h2 class="category-title">Programming Languages</h2>
+
+            <!-- Python -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="python.png" alt="Python">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Python Programming</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Intermediate</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Proficient in Python for scripting, data analysis, and backend development, with experience in various libraries and frameworks including Django, Flask, and data science tools.
+                    </p>
+                    <p class="skill-category">Category: Programming Languages</p>
+                </div>
+            </div>
+
+            <!-- Java -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="java.png" alt="Java">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Java Development</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Intermediate</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Solid understanding of Java for object-oriented programming and developing robust applications, including basic Android development concepts and enterprise application frameworks.
+                    </p>
+                    <p class="skill-category">Category: Programming Languages</p>
+                </div>
+            </div>
+
+            <!-- C++ -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="c++.png" alt="C++">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>C++ Programming</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Advanced</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Advanced knowledge in C++ programming with strong understanding of object-oriented concepts, data structures, algorithms, and system-level programming for high-performance applications.
+                    </p>
+                    <p class="skill-category">Category: Programming Languages</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Web Development Section -->
+        <div class="category-section">
+            <h2 class="category-title">Frontend Development</h2>
+
+            <!-- Web Development -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="wd.png" alt="Web Development">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Web Development (HTML/CSS/JS/PHP)</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Intermediate</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Capable of building responsive and interactive web interfaces using HTML5, CSS3, JavaScript, and PHP, with exposure to modern frameworks and development best practices.
+                    </p>
+                    <p class="skill-category">Category: Frontend Development</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Database Section -->
+        <div class="category-section">
+            <h2 class="category-title">Database Management</h2>
+
+            <!-- SQL -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="sql.png" alt="SQL">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>SQL Database Management</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Intermediate</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Experience in designing, querying, and managing relational databases using SQL, including MySQL and PostgreSQL, with knowledge of database optimization and normalization.
+                    </p>
+                    <p class="skill-category">Category: Database</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Networking & Security Section -->
+        <div class="category-section">
+            <h2 class="category-title">Networking & Cybersecurity</h2>
+
+            <!-- Networking -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="nf.png" alt="Networking">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Networking Fundamentals</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Advanced</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Strong foundation in network protocols, IP addressing, routing, switching, and network troubleshooting. Certified in Cisco networking with practical experience in network configuration.
+                    </p>
+                    <p class="skill-category">Category: Networking</p>
+                </div>
+            </div>
+
+            <!-- Ethical Hacking -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="EH.png" alt="Ethical Hacking">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Ethical Hacking & Cybersecurity</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Intermediate</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Knowledge in penetration testing, vulnerability assessment, and cybersecurity best practices. Certified Ethical Hacker with understanding of defensive strategies and security protocols.
+                    </p>
+                    <p class="skill-category">Category: Cybersecurity</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design & Creative Section -->
+        <div class="category-section">
+            <h2 class="category-title">Design & Creative Tools</h2>
+
+            <!-- Photoshop -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="photoshop.png" alt="Photoshop">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Adobe Photoshop</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Advanced</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Advanced skills in photo editing, graphic design, and digital art creation using Adobe Photoshop. Capable of creating professional designs for web and print media.
+                    </p>
+                    <p class="skill-category">Category: Design Software</p>
+                </div>
+            </div>
+
+            <!-- Adobe Animate -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="animation.png" alt="Adobe Animate">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Adobe Animate</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Advanced</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Proficient in creating animations, interactive content, and multimedia projects using Adobe Animate. Experience with timeline-based animation and ActionScript.
+                    </p>
+                    <p class="skill-category">Category: Animation Software</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Soft Skills Section -->
+        <div class="category-section">
+            <h2 class="category-title">Professional Skills</h2>
+
+            <!-- Problem Solving -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="ps.png" alt="Problem Solving">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>Problem Solving</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Advanced</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Strong analytical and critical thinking skills with ability to break down complex problems and develop effective solutions. Experience in debugging, troubleshooting, and optimization.
+                    </p>
+                    <p class="skill-category">Category: Soft Skills</p>
+                </div>
+            </div>
+
+            <!-- English Communication -->
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <img src="EC.png" alt="English Communication">
+                </div>
+                <div class="skill-content">
+                    <div class="skill-header">
+                        <div class="skill-title">
+                            <h2>English Communication</h2>
+                            <span class="star-icon">★</span>
+                        </div>
+                        <div class="proficiency-badge">
+                            <p class="proficiency-label">Proficiency</p>
+                            <p class="proficiency-level">Advanced</p>
+                        </div>
+                    </div>
+                    <p class="skill-description">
+                        Excellent written and verbal communication skills in English. Certified with diploma in English Language, capable of professional documentation and effective team collaboration.
+                    </p>
+                    <p class="skill-category">Category: Communication</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
