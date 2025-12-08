@@ -1,5 +1,3 @@
-// Portfolio Website JavaScript - Responsive with Mobile Menu
-// Author: Kasun Banneheka
 
 // ============================================
 // MOBILE MENU TOGGLE
@@ -743,4 +741,5 @@ window.addEventListener('load', function() {
         document.body.style.transition = 'opacity 0.5s ease';
         document.body.style.opacity = '1';
     }, 100);
+
 });
